@@ -94,8 +94,13 @@ inputInput.addEventListener("input", () => {
         resultP.innerHTML = "정수를 입력하세요.";
         return;
     }
-    // 1보다 작거나 같을떄
-    if (inputValue <= 1) {
+    // 1일 때
+    if (inputValue === 1) {
+        resultP.innerHTML = "그냥 1";
+        return;
+    }
+    // 1보다 작을 때
+    if (inputValue < 1) {
         resultP.innerHTML = "2 이상의 수를 입력하세요.";
         return;
     }
