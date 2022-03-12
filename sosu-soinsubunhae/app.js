@@ -72,7 +72,7 @@ const ssisbh = {
 
 const inputInput = document.querySelector("input#input");
 const resultP = document.querySelector("p#result");
-const maxlength = 5;
+const maxlength = 6;
 
 resultP.innerHTML = "입력하세요.";
 inputInput.addEventListener("input", () => {
@@ -104,6 +104,7 @@ inputInput.addEventListener("input", () => {
         resultP.innerHTML = "1 이상의 수를 입력하세요.";
         return;
     }
+    resultP.innerHTML = "계산중...";
 
     resultP.innerHTML = `${ssisbh.sisbhToHTML(ssisbh.sisbh(inputValueInt))}`;
     if (ssisbh.isSosu(inputValueInt)) {
