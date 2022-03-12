@@ -95,13 +95,13 @@ inputInput.addEventListener("input", () => {
         return;
     }
     // 1일 때
-    if (inputValue === 1) {
+    if (inputValueInt === 1) {
         resultP.innerHTML = "그냥 1";
         return;
     }
     // 1보다 작을 때
-    if (inputValue < 1) {
-        resultP.innerHTML = "2 이상의 수를 입력하세요.";
+    if (inputValueInt < 1) {
+        resultP.innerHTML = "1 이상의 수를 입력하세요.";
         return;
     }
 
