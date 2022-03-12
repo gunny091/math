@@ -95,7 +95,7 @@ inputInput.addEventListener("input", () => {
         return;
     }
     // 1보다 작거나 같을떄
-    if (inputValue.length <= 1) {
+    if (inputValue <= 1) {
         resultP.innerHTML = "2 이상의 수를 입력하세요.";
         return;
     }
